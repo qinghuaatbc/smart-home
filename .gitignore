@@ -1,0 +1,10 @@
+.godot/
+html/
+glb/
+person/
+*.pck
+*.wasm
+*.js
+*.dmg
+*.app
+Smart Home.app/
