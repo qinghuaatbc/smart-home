@@ -1,0 +1,4 @@
+res://scripts/player.gd
+res://scripts/door.gd
+res://scripts/interactable.gd
+res://scripts/camera_controller.gd
