@@ -188,6 +188,10 @@ func _get_door_meshes(node: Node) -> Array:
 	return meshes
 
 func _input(event):
+	if event is InputEventKey and event.pressed and event.keycode == KEY_H:
+		if model:
+			model.visible = not model.visible
+	
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var space_state = get_world_3d().direct_space_state
 		var from = get_parent().get_node("Camera3D").global_position

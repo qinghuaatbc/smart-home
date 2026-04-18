@@ -20,9 +20,8 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
-window/size/resizable=true
-window/size/minimum_size=800x600
-window/stretch/mode="canvas_items"
+window/size/minimum_size=800
+x600window/stretch/mode="canvas_items"
 
 [physics]
 

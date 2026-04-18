@@ -18,10 +18,6 @@ func _physics_process(_delta):
 	if not player:
 		return
 	
-	if Input.is_key_pressed(KEY_SPACE):
-		_switch_view()
-		await get_tree().create_timer(0.5).timeout
-	
 	if current_view == "first_person":
 		rotation.y = player.rotation.y
 	
@@ -41,3 +37,7 @@ func _switch_view():
 	var current_index = view_keys.find(current_view)
 	var next_index = (current_index + 1) % view_keys.size()
 	current_view = view_keys[next_index]
+
+func _input(event):
+	if event is InputEventKey and event.pressed and event.keycode == KEY_SPACE:
+		_switch_view()
